@@ -1,0 +1,37 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"store_name": {
+			"bsonType": "string",
+			"description": "商家名称",
+			"title": "商家名称",
+			"trim": "both"
+		},
+		"month_sell_count": {
+		      "bsonType": "int",
+		      "description": "月销量"
+		    },
+		"total_sell_count": {
+		  "bsonType": "int",
+		  "description": "起送"
+		},
+		{
+			"key": "goods_thumb",
+			"title": "店铺封面",
+			"type": "text",
+			"width": 180,
+			"mode": "%%"
+		},
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"bsonType": "object",
+	"required": ["name"],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": true,
+		"delete": true
+	},
+	"properties": {
+		"_id": {
+			"description": "类别ID"
+		},
+		"parent_id": {
+			"bsonType": "string",
+			"foreignKey": "systeme-store._id",
+			"description": "商家ID"
+		},
+		"name": {
+			"bsonType": "string",
+			"description": "类别名称",
+			"title": "类别名称",
+			"trim": "both"
+		},
+		"sort": {
+			"bsonType": "int",
+			"description": "类别排序，越大越靠后",
+			"title": "排序"
+		},
+		"description": {
+			"bsonType": "string",
+			"description": "类别描述",
+			"title": "类别描述",
+			"trim": "both"
+		},
+		"is_hot_show": {
+			"bsonType": "bool",
+			"title": "加入热门显示",
+			"description": "是否热门显示"
+		},
+		"is_index_show": {
+			"bsonType": "bool",
+			"title": "首页显示",
+			"description": "是否首页显示"
+		}
+		
+	},
+	"version": "0.0.1"
+}

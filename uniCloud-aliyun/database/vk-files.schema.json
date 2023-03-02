@@ -1,0 +1,72 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": false,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"url": {
+			"bsonType": "string",
+			"title": "url",
+			"minLength": 2,
+			"maxLength": 200
+		},
+		"file_id": {
+			"bsonType": "string",
+			"title": "出生年份",
+			"minLength": 2,
+			"maxLength": 200
+		},
+		"status": {
+			"bsonType": "int",
+			"title": "状态",
+			"minimum": 0
+		},
+		"sort": {
+			"bsonType": "int",
+			"title": "排序",
+			"minimum": 0
+		},
+		"display_name": {
+			"bsonType": "string",
+			"title": "显示名称",
+			"minLength": 2
+		},
+		"size": {
+			"bsonType": "int",
+			"title": "大小",
+			"minimum": 0
+		},
+		"provider": {
+			"bsonType": "string",
+			"title": "提供者",
+			"minLength": 0
+		},
+		"width": {
+			"bsonType": "int",
+			"title": "宽度",
+			"minimum": 0
+		},
+		"height": {
+			"bsonType": "int",
+			"title": "高度",
+			"minimum": 0
+		},
+		"category_id": {
+			"bsonType": "string",
+			"title": "类别id",
+			"minLength": 0
+		},
+		"_add_time": {
+			"bsonType": "timestamp",
+			"description": "创建时间"
+		}
+	}
+}
